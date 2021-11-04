@@ -1,3 +1,14 @@
 body {
-    background-color: cornflowerblue;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #31343D;
+    
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
 }
