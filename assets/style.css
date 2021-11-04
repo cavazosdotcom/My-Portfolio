@@ -4,8 +4,9 @@ body {
 }
 
 header {
+    display: flex;
     background-color: #31343D;
-    
+    justify-content: space-between;
 }
 
 nav {
