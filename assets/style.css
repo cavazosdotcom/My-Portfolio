@@ -1,6 +1,7 @@
 body {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
 }
 
 header {
@@ -8,13 +9,29 @@ header {
     background-color: #31343D;
     justify-content: space-between;
     align-items: center;
+    padding: 1em 0;
 }
 
+
+
 div h1 {
+    position: relative;
     background-color: #92CCCE;
+    padding: 0.5em 0.5em 0.5em 3em;
+    font-size: 2em;
+    color: #31343D;
+
 }
 
 nav ul {
     display:flex;
-    
+    justify-content: space-between;
+    min-width: 300px;
+    color: #92CCCE;
 }
+
+/* @media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+} */
