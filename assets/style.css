@@ -55,7 +55,9 @@ p {
       /* justify-content: space-between; */
     }
 
-
+    .header-links li {
+        flex: 1 1 25%;
+    }
 /* full size page reference */
 /* body {
     display: flex;
