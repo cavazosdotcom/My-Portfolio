@@ -5,6 +5,7 @@ body {
 
 header {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding: 2%;
@@ -15,18 +16,17 @@ header {
 h1 {
     font-size: 3em;
     background-color: #92CCCE;
-
 }
 
 .header-links {
-    /* display: flex; */
+    display: flex;
     background-color: brown;
     font-size: 2em;
 }
 
 .header-links ul {
     display: flex;
-    /* justify-content: space-around; */
+    flex-direction: column;
     min-width: 50%;
 }
 
@@ -43,10 +43,11 @@ p {
     font-size: 30px;
 }
 
-@media screen and (max-width: 768px) {
-    header,
-    main {
-      flex-direction: column;
+@media screen and (min-width: 768px) {
+    .header-links ul,
+    header {
+      flex-direction: row;
+      /* justify-content: space-between; */
     }
 /* body {
     display: flex;
