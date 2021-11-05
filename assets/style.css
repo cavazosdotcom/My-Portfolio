@@ -1,4 +1,4 @@
-body {
+/* body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -6,6 +6,7 @@ body {
 
 header {
     display: flex;
+    flex-wrap: wrap;
     background-color: #31343D;
     justify-content: space-between;
     align-items: center;
@@ -15,9 +16,8 @@ header {
 
 
 div h1 {
-    position: relative;
     background-color: #92CCCE;
-    padding: 0.5em 0.5em 0.5em 3em;
+    padding: 0.5em 0.5em 0.5em 1.5em;
     font-size: 2em;
     color: #31343D;
 
@@ -25,13 +25,40 @@ div h1 {
 
 nav ul {
     display:flex;
-    justify-content: space-between;
+    justify-content: space-around;
     min-width: 300px;
+    margin: 0 3em;
     color: #92CCCE;
-}
+} */
 
 /* @media screen and (max-width: 768px) {
     nav {
         flex-direction: column;
     }
 } */
+
+body {
+    display:flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em;
+    background-color: #31343C;
+    width: 100%;
+}
+
+div h1 {
+    background-color: #92CCCE;
+    padding: .5em;
+    align-items: flex-end;
+}
+
+nav ul {
+    padding: 0.5em;
+    color: #92CCCE;
+
+}
