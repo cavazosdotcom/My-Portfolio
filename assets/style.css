@@ -29,36 +29,43 @@ nav ul {
     min-width: 300px;
     margin: 0 3em;
     color: #92CCCE;
-} */
-
-/* @media screen and (max-width: 768px) {
-    nav {
-        flex-direction: column;
-    }
-} */
-
-body {
-    display:flex;
-    flex-direction: column;
-    /* align-items: center; */
 }
+ */
+
 
 header {
     display: flex;
     flex-direction: column;
-    padding: 0.5em;
-    background-color: #31343C;
-    width: 100%;
+    /* flex-wrap: wrap; */
+    background-color: #31343D;
+    align-items: center;
 }
 
-div h1 {
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 100px;
+}
+
+.container h1 {
+    font-size: 2em;
+    padding: 10px;
+    margin-top: 10px;
     background-color: #92CCCE;
-    padding: .5em;
-    align-items: flex-end;
+    text-align: center;
 }
 
-nav ul {
-    padding: 0.5em;
+.container ul {
+    text-align: center;
+    padding: 10px;
     color: #92CCCE;
+}
 
+.container li {
+    font-size: 200%;
+    padding: 1em;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 1px;
 }
