@@ -47,12 +47,14 @@ header {
 }
 
 h2 {
+    text-align: center;
     font-size: 3rem;
 }
 
 p {
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
+    line-height: 2rem;
 }
 
 .row {
@@ -63,11 +65,16 @@ p {
     margin-right: -1.5rem; */
 }
 
+.around {
+    justify-content:space-around;
+}
+
 .justify-center{
     justify-content: center;
 }
 
 .container {
+    padding: 1rem;
     flex: 1 1 100%;
 }
 
@@ -78,13 +85,10 @@ p {
 }
 
 .card img {
-    width: 300px;
+    width: 20rem;
     flex: 1 1;
 }
 
-.flex {
-    display: flex;
-}
 
 @media screen and (min-width: 768px) {
     .header-links ul,
@@ -102,6 +106,15 @@ p {
         max-width: 50%;
     }
 
+    .flex {
+        display: flex;
+    }
+    
+    aside {
+        border-right: solid #31343D;
+        padding:1rem;
+    }
+
 }
 @media screen and (min-width: 992px) {
     .header-links ul,
@@ -117,6 +130,15 @@ p {
     .container {
         flex: 1 1 50%;
         max-width: 50%;
+    }
+
+    .flex {
+        display: flex;
+    }
+    
+    aside {
+        border-right: solid #31343D;
+        padding:1rem;
     }
 
 }
