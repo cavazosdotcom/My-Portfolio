@@ -13,9 +13,9 @@
     
     <header>
         
-        <aside>
-            <h1 >Chris Cavazos</h1>
-        </aside>
+            <aside>
+                <h1 >Chris Cavazos</h1>
+            </aside>
 
         <nav class="header-links">
             <ul>
@@ -46,10 +46,11 @@
 
 
             <div class="flex">
-                <aside>
-                    <h2 id="#About-Me">About Me</h2>
-                </aside>  
-
+                <div class="line">
+                    <aside class="start">
+                        <h2 id="#About-Me">About Me</h2>
+                    </aside>  
+                </div>
                 <div>
                     <p>
                         Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus
@@ -63,63 +64,62 @@
                 </div>
             </div>
 
-            <div>
-                <div class="flex">
-
-                    <aside>
+            <div class="flex">
+                
+                <div class="line">
+                    <aside class="start">
                         <h2 id="Work">Work</h2>
                     </aside>
+                </div>
 
-                    <div class="row justify-center">
-                        
-                        <div class="container">
-                            <div>
-                                <a class="card" href="">
-                                    <img alt="Code written on paper with colorful background" src="/Users/chris/Pictures/code-stock.jpeg"/>
-                                </a>
-                            </div> 
+                <div class="container"> 
+                    <div class="row">
+                        <div class="card-container">
+                            <a class="card" href="">
+                                <img alt="Code written on paper with colorful background" src="/Users/chris/Pictures/code-stock.jpeg"/>
+                            </a>
                         </div>
-
-                        <div class="container">
-                            <div>
-                                <a class="card" href="">
-                                    <img alt="" src="/Users/chris/Pictures/code-stock.jpeg"/>
-                                </a>
-                            </div>
+                          
+                        <div class="card-container">
+                            <a class="card" href="">
+                                <img alt="" src="/Users/chris/Pictures/code-stock.jpeg"/>
+                            </a>
                         </div>
                             
-                        <div class="container">
+                        <div class="card-container">
                             <div class="card">
                                 <img alt="" src="/Users/chris/Pictures/code-stock.jpeg"/>
                             </div>
                         </div>
 
-                        <div class="container">
+                        <div class="card-container">
                             <div class="card">
                                 <img alt="" src="/Users/chris/Pictures/code-stock.jpeg"/>
                             </div>
                         </div>
 
-                        <div class="container">
+                        <div class="card-container">
                             <div class="card">
                                 <img alt="" src="/Users/chris/Pictures/code-stock.jpeg"/>
                             </div>
                         </div>
-
                     </div>
-
                 </div>
+
             </div>
 
             <footer>
                 
                 <div class="flex">
-                    <aside>
-                        <h2 id="Contact-Me">Contact Me</h2>
-                    </aside>
+                    
+                    <div class="line">
+                        <aside class="start">
+                            <h2 id="Contact-Me">Contact Me</h2>
+                        </aside>
+                    </div>
 
                     <nav>
-                        <ul class="row around">
+                        <ul class="row even">
                             <li>(425)280-3614</li>
                             <li>cavazosdotcom@gmail.com</li>
                             <li> <a href="https://github.com/cavazosdotcom">Github</a></li>
@@ -127,6 +127,8 @@
                             <li> <a href="">Spotify</a></li>
                         </ul>
                     </nav>
+                    </div>
+                    
                 </div>    
 
             </footer>
