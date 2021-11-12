@@ -61,12 +61,25 @@ p {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* margin-left: -1.5rem;
-    margin-right: -1.5rem; */
 }
 
-.even {
+.row-work {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.row-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content:space-evenly;
+}
+
+.card {
+    display:flex;
+    border: solid #31343D;
+    border-width: 1rem;
 }
 
 .container {
@@ -77,12 +90,6 @@ p {
 .card-container{
     flex: 1 1 100%;
     padding: 1rem;
-}
-
-.card {
-    display:flex;
-    border: solid #31343D;
-    border-width: 2px;
 }
 
 .card img {
@@ -113,12 +120,6 @@ p {
         font-size: 2rem;
     }
 
-    /* .row {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    } */
-
     .container {
         flex: 1 1;
         min-width: 50%;
@@ -130,17 +131,31 @@ p {
         padding: 3%;
     }
 
-    .flex {
-        display: flex;
+    .footer {
+        flex: 1 1 100%;
+        /* min-width: 200px; */
+        justify-content: space-evenly;
+        align-items: center;
     }
 
-    .footer {
-        justify-content: space-evenly;
+    .footer-con {
+        flex: 1 1;
+        /* align-items: center; */
+        /* justify-content: center; */
+        text-align: center;
+    }
+
+    .flex {
+        display: flex;
     }
 
     .line {
         border-right: solid #31343D;
         padding:1rem;
+    }
+
+    .row-work {
+        justify-content: center;
     }
 
 }
@@ -154,12 +169,6 @@ p {
         flex: 1 1;
         font-size: 2rem;
     }
-    
-    /* .row {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    } */
 
     .container {
         flex: 1 1 50%;
@@ -169,15 +178,23 @@ p {
     .card-container{
         flex: 1 1 50%;
         min-width: 50%;
+        max-width: 100rem;
         padding:4%;
+        justify-content: center;
+    }
+
+    .footer {
+        flex: 1 1;
+        padding: 1rem;
+    }
+
+    .footer-con {
+        flex: 1 1 20%;
+        padding:1rem;
     }
 
     .flex {
         display: flex;
-    }
-    
-    .footer {
-        justify-content: space-evenly;
     }
 
     .line {
@@ -185,7 +202,9 @@ p {
         padding:2rem;
     }
 
-
+    .row-work {
+        justify-content: center;
+    }
 
 }
         
