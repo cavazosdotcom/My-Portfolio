@@ -19,6 +19,10 @@
     font-size: 100%;
   }
   
+  a {
+    text-decoration: none;
+  }
+
   input, select, option, optgroup, textarea, button,
   pre, code {
     font-size: 100%;
