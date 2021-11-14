@@ -7,11 +7,6 @@ body {
     background-color:#c2c2ca94;
 }
 
-main{
-    width: 96%;
-    margin: 2rem auto;
-    /* background-color: #EEEEF7; */
-}
 
 .head a {
     color:#31343D;
@@ -23,8 +18,8 @@ main{
 
 h1 {
     font-size: 5rem;
-    background-color: #6ab7b9;
-    margin: 0.2rem 0 0.8rem 0;
+    /* background-color: #6ab7b9; */
+    /* margin: 0.2rem 0 0.8rem 0; */
 }
 
 header {
@@ -72,6 +67,14 @@ header {
 
 li {
     color: #6ab7b9;
+}
+
+.stock img {
+    padding: 0;
+    /* display: block; */
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
 }
 
 h2 {
@@ -228,6 +231,17 @@ p {
         color: #DBC900;
     }
     
+    h1 {
+        background-color: #92CCCE;
+        padding: 0.5rem, 0.5rem, 0.5rem, 7.5rem;
+        font-size: 5rem;
+        color: #31343D;
+    }
+
+    header {
+        padding-left: 0;
+    }
+
     .header-links ul,
     header {
         flex-direction: row; 
@@ -281,7 +295,7 @@ p {
 
     .line-am {
         border-right: solid #31343D;
-        padding:2.77rem;
+        padding: 2.76rem;
     }
 
     .line-work {
