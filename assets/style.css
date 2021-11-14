@@ -13,9 +13,18 @@ main{
     /* background-color: #EEEEF7; */
 }
 
+.head a {
+    color:#31343D;
+}
+
+.foot a {
+    color: #6ab7b9;
+}
+
 h1 {
     font-size: 5rem;
-    background-color: #92CCCE;
+    background-color: #6ab7b9;
+    margin: 0.2rem 0 0.8rem 0;
 }
 
 header {
@@ -30,28 +39,39 @@ header {
 
 .header-links {
     display: flex;
-    background-color:#31343D;
+    
+    /* background-color:#DBC900; */
     font-size: 3rem;
+    /* border-radius: 15px; */
 }
 
 .header-links ul {
     display: flex;
     flex-wrap: wrap;
+    /* padding: 1rem; */
 }
 
 .header-links li {
-    flex:1 1 50%;
+    flex:1 1 40%;
     text-align: center;
     padding: 0.5rem 1rem;
-    border-color: #DBC900;
+    /* border-color: #c9b803;
     border-style: solid;
-    border-width: 1px;
+    border-width: 2px; */
     text-decoration: none!important;
-    color: #92CCCE;
+    background-color: #DBC900;
+    border-radius: 15px;
+    margin:.5rem;
+    /* background-color: linear-gradient(
+        rgba( 219, 200, 0, 100%) 0%;
+        rgba( 219, 200, 0, 100%) 100%;
+    ); */
+    /* width: 50%; */
+    /* color: #92CCCE; */
 }
 
 li {
-    color: #92CCCE;
+    color: #6ab7b9;
 }
 
 h2 {
@@ -64,7 +84,7 @@ p {
     font-size: 2rem;
     text-align: center;
     line-height: 2rem;
-    color:#92CCCE;
+    color:#6ab7b9;
     padding: 1rem;
 }
 
@@ -96,8 +116,20 @@ p {
 }
 
 .card:hover {
-    box-shadow: 0px 0px 15px #92CCCE, 0 0 15px #92CCCE;
+    box-shadow: 0px 0px 15px #DBC900, 0 0 15px #DBC900;
 } 
+
+.card:active {
+    box-shadow: 0px 0px 15px #6ab7b9, 0 0 15px #6ab7b9;
+} 
+
+.header-links li:hover {
+    box-shadow: inset 0px 0px 15px #DBC900, 0 0 15px #DBC900;
+}
+
+.header-links li:active {
+    box-shadow: inset 0px 0px 15px #6ab7b9, 0 0 15px #6ab7b9;
+}
 
 .container {
     padding: 1rem;
@@ -155,6 +187,10 @@ p {
 }
 
 @media screen and (min-width: 768px) {
+    .head a {
+        color: #DBC900;
+    }
+    
     .header-links ul,
     header {
         flex-direction: row; 
@@ -163,6 +199,8 @@ p {
     .header-links li {
         flex: 1 1;
         font-size: 2rem;
+        border-width: 0;
+        background-color: #31343D;
     }
 
     .container {
@@ -175,6 +213,15 @@ p {
         min-width: 50%;
         padding: 3%;
     }
+
+    .header-links li:hover {
+        box-shadow: inset 0 0 0, 0 0 0;
+    }
+    
+    .header-links li:active {
+        box-shadow: inset 0 0 15, 0 0 15;
+    }
+
 /* 
     .footer {
         flex: 1 1;
@@ -203,6 +250,10 @@ p {
         justify-content: center;
     }
 
+    p {
+        color:#6ab7b9
+    }
+
 }
 @media screen and (min-width: 992px) {
     .header-links ul,
@@ -213,6 +264,8 @@ p {
     .header-links li {
         flex: 1 1;
         font-size: 2rem;
+        /* background-color: #31343D; */
+        /* color: #DBC900; */
     }
 
     .container {
@@ -227,8 +280,8 @@ p {
         padding:3%;
         justify-content: center;
     }
-/* 
-    .footer {
+
+    /*.footer {
         flex: 1 1;
         padding: 1rem;
         align-items: center;
