@@ -1,74 +1,81 @@
+/* Sets root variables so I can easily change these values */
+:root {
+    --dark: #31343D;
+    --grey: #c2c2ca94;
+    --yellow: #DBC900;
+    --dark-yellow: #9c8f01;
+    --blue: #6ab7b9;
+  }
+  
 
+/* Sets font so rem and px are relative, easier to keep track of size */
 html {
     font-size: 62.5%;
 }
 
+/* Body of page background color set */
 body {
-    background-color:#c2c2ca94;
+    background-color: var(--grey);
+    font-family:sans-serif, Arial, Helvetica, sans-serif, monospace;
 }
 
-
-.head a {
-    color:#31343D;
+/* sets header anchor color to dark on mobile, only way I could get the text decoration to leave was setting the anchor color on top */
+.head-color a {
+    color:var(--dark);
 }
 
-.foot a {
-    color: #6ab7b9;
+/* footer anchor color */
+.foot-color a {
+    color: var(--blue);
 }
 
+/* h1 font size/color */
 h1 {
     font-size: 5rem;
-    /* background-color: #6ab7b9; */
-    /* margin: 0.2rem 0 0.8rem 0; */
+    color: var(--blue);
 }
 
+/* creates flex column in header */
 header {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     padding: 2%;
-    background-color: #31343D;
-    color: azure;
+    background-color: var(--dark);
 }
 
+/* class in nav that changes font size in mobile */
 .header-links {
-    display: flex;
-    
-    /* background-color:#DBC900; */
     font-size: 3rem;
-    /* border-radius: 15px; */
 }
 
+/* ul in header is set to flex-wrap so li can change from 2 columns in mobile to 1 row on desktop */
 .header-links ul {
     display: flex;
     flex-wrap: wrap;
-    /* padding: 1rem; */
 }
 
+/* flex properties and css for li in header, creates border and box styles*/
 .header-links li {
     flex:1 1 40%;
     text-align: center;
     padding: 0.5rem 1rem;
-    /* border-color: #c9b803;
-    border-style: solid;
-    border-width: 2px; */
-    text-decoration: none!important;
-    background-image: linear-gradient(#9c8f01,#DBC900);
-    border-radius: 15px;
+    text-decoration: none;
+    background-image: linear-gradient(var(--dark-yellow),var(--yellow));
+    border-radius: 10px;
     margin:.5rem;
-    /* background-color: linear-gradient(
-        rgba( 219, 200, 0, 100%) 0%;
-        rgba( 219, 200, 0, 100%) 100%;
-    ); */
-    /* width: 50%; */
-    /* color: #92CCCE; */
+    border-color: var(--blue);
+    border-style: solid;
+    border-width: 2px;
 }
 
+/* ALL list items are set to blue, for 2 unanchored items in footer list */
 li {
-    color: #6ab7b9;
+    color: var(--blue);
 }
 
+/* image banner for top of page */
 .stock img {
     padding: 0;
     /* display: block; */
@@ -77,36 +84,49 @@ li {
     max-width: 100%;
 }
 
+/* all h2 text center for mobile and font size/color */
 h2 {
     text-align: center;
     font-size: 4rem;
-    color: #31343D;
+    color: var(--dark);
 }
 
-#top {
-    margin-top: 1rem;
+/* all h3 center with box styling(padding) */
+h3 {
+    text-align: center;
+    padding:1rem;
+    font-size:3rem;
+    color: var(--dark);
 }
 
+/* all p styled and box styled */
 p {
     font-size: 2rem;
     text-align: center;
     line-height: 2rem;
-    color:#6ab7b9;
+    color:var(--blue);
     padding: 1rem;
 }
 
-.row {
+/* creates top margin id for each section on main, About, work, contact */
+#top {
+    margin-top: 1rem;
+}
+
+/* .row {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-}
+} */
 
+/* creats flex grid row and wrap for work section */
 .row-work {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
+/* creates flex grid row in footer */
 .row-footer {
     display: flex;
     flex-direction: row;
@@ -115,13 +135,7 @@ p {
     align-items: center;
 }
 
-.card {
-    display:flex;
-    border: solid #31343D;
-    border-width: 1rem;
-    border-radius: 25px;
-}
-
+/* creates flex grid column/wrap for About image and p */
 .column {
     display: flex;
     flex-direction: column;
@@ -130,26 +144,25 @@ p {
     /* justify-content: center; */
 }
 
-.me {
-    /* justify-content: center; */
-}
-
+/* flex container properties for about section */
 .me-container {
     flex: 1 1;
     /* justify-content: center; */
     align-items: center;
 }
 
+/* about image centered with style properties */
 .me-container img {
     width: 36rem;
     /* justify-content: center; */
     align-items: center;
-    border: solid #DBC900;
+    border: solid var(--yellow);
     border-radius: 15px;
-    box-shadow: 3px 4px 8px 6px #31343D;
+    box-shadow: 3px 4px 8px 6px var(--dark);
     margin: 1rem;
 }
 
+/* container for work section */
 .container {
     padding: 1rem;
     /* flex: 1 1 100%; */
@@ -157,96 +170,112 @@ p {
     align-items: center;
 }
 
+/* container for each card in work container */
 .card-container{
     flex: 1 1 100%;
     padding: 1rem;
     margin: 0 auto;
 }
 
+/* work card flex with style */
+.card {
+    display:flex;
+    border: solid var(--dark);
+    border-width: 0.5rem;
+    border-radius: 21px;
+}
+
+/* work image flex properties */
 .card img {
     width: 19rem;
     flex: 1 1;
     border-radius: 15px;
 }
 
+/* makes first card priority, placed on top and centered with flex properties */
 .active {
     order: -1;
     flex: 1 1 100%;
     justify-content: center;
 }
 
-.footer {
+/* flex properties for footer */
+.footer-flex {
     flex: 1 1;
     justify-content: space-evenly;
     align-items: center;
     padding: 1rem;
 }
 
-.footer-con {
-    /* flex: 1 1; */
+/* text style/alignment for footer links */
+.footer-text {
     text-align: center;
     align-items: center;
     padding:1rem;
     font-size: 1.5rem
 }
 
+/* padding for about */
 .padding-am {
     padding:1rem
 }
 
+/* margin on all sections */
 .margin-all {
     margin: 5rem 0;
 }
 
+/* on hover each card gets yellow shadow */
+.card:hover {
+    box-shadow: 0px 0px 15px var(--yellow), 0 0 15px var(--yellow);
+} 
+
+/* on active each card gets blue shadow */
+.card:active {
+    box-shadow: 0px 0px 15px var(--blue), 0 0 15px var(--blue);
+} 
+
+/* on mobile each card gets inset shadow*/
+.header-links li:active {
+    box-shadow: inset 0px 0px 15px var(--dark), 0 0 15px var(--dark);
+}
+
+/* class to center */
 .center {
     justify-content: center;
 }
 
-.start {
-    justify-content: flex-start;
-}
 
-.end {
-    justify-content: flex-end;
-}
-
-.card:hover {
-    box-shadow: 0px 0px 15px #DBC900, 0 0 15px #DBC900;
-} 
-
-.card:active {
-    box-shadow: 0px 0px 15px #6ab7b9, 0 0 15px #6ab7b9;
-} 
-/* 
-.header-links li:hover {
-    box-shadow: inset 0px 0px 15px #DBC900, 0 0 15px #DBC900;
-} */
-
-.header-links li:active {
-    box-shadow: inset 0px 0px 15px #6ab7b9, 0 0 15px #6ab7b9;
-}
-
+/* media query for tablets */
 @media screen and (min-width: 768px) {
-    .head a {
-        color: #DBC900;
+    
+    /* changes header link color to yellow */
+    .head-color a {
+        color: var(--yellow);
     }
     
-    h1 {
-        background-color: #92CCCE;
-        padding: 0.5rem 0.5rem 0.5rem 7.5rem;
-        font-size: 5rem;
-        color: #31343D;
-    }
-
+    /* on tablet/desktop header seperates to both ends */
     header {
         padding-left: 0;
+        justify-content: space-between;
     }
 
+    /* h1 style for tablet/desktop */
+    h1 {
+        background-color: var(--blue);
+        padding: 1rem 1rem 1rem 7.5rem;
+        font-size: 4.4rem;
+        color: var(--dark);
+        border-radius: 0 8px 8px 0;
+    }
+
+    /* flex grid changed to row */
     .header-links ul,
     header {
         flex-direction: row; 
     }
 
+    /* flex properties for li in header */
     .header-links li {
         flex: 1 1;
         font-size: 2rem;
@@ -255,86 +284,81 @@ p {
         background-image: none;
     }
 
+    /* container set so grid can now have two cards */
     .container {
         flex: 1 1;
         min-width: 50%;
     }
 
+    /* card flex properties */
     .card-container{
         flex: 1 1 50%;
         min-width: 50%;
         padding: 3%;
     }
 
-    .header-links li:hover {
-        box-shadow: inset 0 0 0, 0 0 0;
-    }
-    
-    .header-links li:active {
-        box-shadow: inset 0 0 15, 0 0 15;
-    }
-
-/* 
-    .footer {
-        flex: 1 1;
-        
-        justify-content: space-evenly;
-        align-items: center;
-    }
-
-    .footer-con {
-        flex: 1 1;
-        
-        text-align: center;
-        align-items: center;
-    } */
-
+    /* flex class */
     .flex {
         display: flex;
     }
-
+    
+    /* line for about me */
     .line-am {
-        border-right: solid #31343D;
+        border-right: solid var(--dark);
         padding: 2.76rem;
     }
-
+    
+    /* line for work */
     .line-work {
-        border-right: solid #31343D;
+        border-right: solid var(--dark);
         padding:6.91rem;
     }
-
+    
+    /* line got contact */
     .line-cm {
-        border-right: solid #31343D;
+        border-right: solid var(--dark);
         padding:1.1rem;
     }
-
+    
+    /* work flex grid now centers */
     .row-work {
         justify-content: center;
     }
-
-    p {
-        color:#6ab7b9
+    
+    /* stops shadow on header list */
+    .header-links li:hover {
+        box-shadow: none;
     }
-
+    
+    /* stops shadow on header list */
+    .header-links li:active {
+        box-shadow: none;
+    }
+    
 }
+
+/* desktop media query */
 @media screen and (min-width: 992px) {
+    
+    /* flex set to row */
     .header-links ul,
     header {
         flex-direction: row; 
     }
-
+    
+    /* flex properties */
     .header-links li {
         flex: 1 1;
         font-size: 2rem;
-        /* background-color: #31343D; */
-        /* color: #DBC900; */
     }
 
+    /* container set to hold two cards */
     .container {
         flex: 1 1 50%;
         min-width: 50%;
     }
 
+    /* each card flex properties */
     .card-container{
         flex: 1 1 50%;
         min-width: 50%;
@@ -342,108 +366,4 @@ p {
         padding:3%;
         justify-content: center;
     }
-
-    /*.footer {
-        flex: 1 1;
-        padding: 1rem;
-        align-items: center;
-    }
-
-    .footer-con {
-        flex: 1 1 20%;
-        padding:1rem;
-        align-items: center;
-    } */
-
-    /* .flex {
-        display: flex;
-    } */
-/* 
-    .line {
-        border-right: solid #31343D;
-        padding:2rem;
-    } */
-
-    /* .row-work {
-        justify-content: center;
-    } */
-
 }
-       
-
-
-
-
-/* full size page reference */
-/* body {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-
-header {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #31343D;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1em 0;
-}
-
-
-
-div h1 {
-    background-color: #92CCCE;
-    padding: 0.5em 0.5em 0.5em 1.5em;
-    font-size: 2em;
-    color: #31343D;
-
-}
-
-nav ul {
-    display:flex;
-    justify-content: space-around;
-    min-width: 300px;
-    margin: 0 3em;
-    color: #92CCCE;
-}
- */
-
- /* mobile design */
-/* 
-header {
-    display: flex;
-    flex-direction: column;
-    background-color: #31343D;
-    align-items: center;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex: 1 1 100px;
-}
-
-.container h1 {
-    font-size: 2em;
-    padding: 10px;
-    margin-top: 10px;
-    background-color: #92CCCE;
-    text-align: center;
-}
-
-.container ul {
-    text-align: center;
-    padding: 10px;
-    color: #92CCCE;
-}
-
-.container li {
-    flex: 1 1 200px;
-    font-size: 200%;
-    padding: 1em;
-    border-color: #fff;
-    border-style: solid;
-    border-width: 1px;
-} */
