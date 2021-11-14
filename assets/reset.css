@@ -1,3 +1,5 @@
+  /* Reset file to reset the default css properties to work with a blank slate */
+  
   * {
     margin: 0;
     padding: 0;
@@ -23,7 +25,6 @@
     font-size: 100%;
   }
   
-
   input, select, option, optgroup, textarea, button,
   pre, code {
     font-size: 100%;

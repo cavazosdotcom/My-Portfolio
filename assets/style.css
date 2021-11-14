@@ -39,7 +39,6 @@ h1 {
 header {
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
     align-items: center;
     padding: 2%;
     background-color: var(--dark);
@@ -78,7 +77,7 @@ li {
 /* image banner for top of page */
 .stock img {
     padding: 0;
-    /* display: block; */
+    display: block;
     margin: 0 auto;
     max-height: 100%;
     max-width: 100%;
@@ -113,12 +112,6 @@ p {
     margin-top: 1rem;
 }
 
-/* .row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-} */
-
 /* creats flex grid row and wrap for work section */
 .row-work {
     display: flex;
@@ -141,20 +134,17 @@ p {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    /* justify-content: center; */
 }
 
 /* flex container properties for about section */
 .me-container {
     flex: 1 1;
-    /* justify-content: center; */
     align-items: center;
 }
 
 /* about image centered with style properties */
 .me-container img {
     width: 36rem;
-    /* justify-content: center; */
     align-items: center;
     border: solid var(--yellow);
     border-radius: 15px;
@@ -165,7 +155,6 @@ p {
 /* container for work section */
 .container {
     padding: 1rem;
-    /* flex: 1 1 100%; */
     justify-content: center;
     align-items: center;
 }
@@ -253,7 +242,7 @@ p {
     .head-color a {
         color: var(--yellow);
     }
-    
+
     /* on tablet/desktop header seperates to both ends */
     header {
         padding-left: 0;
@@ -325,7 +314,7 @@ p {
         justify-content: center;
     }
     
-    /* stops shadow on header list */
+    /* stops shadow on header list, hover color change*/
     .header-links li:hover {
         box-shadow: none;
     }
