@@ -1,6 +1,8 @@
 # My-Portfolio
 This is my personal portfolio where I get to show off what I can do
 
+*Currently being switched over to React
+
 # Links
 [my-Portfolio Github URL](https://cavazosdotcom.github.io/my-Portfolio/)
 
